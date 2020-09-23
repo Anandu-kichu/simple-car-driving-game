@@ -26,6 +26,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 var obstacle = document.getElementById("obstacle");
+
 var counter = 0;
 obstacle.addEventListener("animationiteration", () => {
   var position = parseInt(Math.random() * 3) * 100;
@@ -34,11 +35,15 @@ obstacle.addEventListener("animationiteration", () => {
 
   if (counter > 5) {
     obstacle.style.animationDuration = "1.7s";
-  } if (counter > 10) {
+    
+  }
+  if (counter > 10) {
     obstacle.style.animationDuration = "1.5s";
-  }if (counter > 15) {
+  }
+  if (counter > 15) {
     obstacle.style.animationDuration = "1.3s";
-  }if (counter > 25) {
+  }
+  if (counter > 25) {
     obstacle.style.animationDuration = "1s";
   }
 });
